@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
     @objc func doToggle(langSwitch: UISwitch) {
         if langSwitch.isOn && !langSwitch.isSelected {
             langSwitch.isSelected = true
-            BKLanguageServiceManager.sharedInstance.getLanguagesFromServer(url: URL(string: "https://api.myjson.com/bins/156d5o")!, fromVC: self)
+            BKLanguageServiceManager.sharedInstance.getLanguagesFromServer(url: URL(string: "https://api.jsonbin.io/b/5f12a6c1918061662843e6bc")!, fromVC: self)
         } else {
             langSwitch.isSelected = false
         }
